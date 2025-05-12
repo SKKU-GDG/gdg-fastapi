@@ -8,6 +8,9 @@ services:
     repo: https://github.com/SKKU-GDG/gdg-fastapi
     dockerfilePath: ./Dockerfile
     autoDeploy: true
+
     envVars:
+      - key: PYTHONPATH
+        value: "./app"
       - key: PORT
         value: "8000"
