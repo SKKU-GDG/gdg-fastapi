@@ -2,7 +2,8 @@
 venv/
 app/__pycache__/
 app/Wav2Lip/__pycache__/
-app/Wav2Lip/temp/
+app/Wav2Lip/temp/result.avi
+app/Wav2Lip/temp/temp.wav
 
 
 # Wav2Lip large files
