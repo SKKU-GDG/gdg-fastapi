@@ -16,10 +16,11 @@ RUN apt-get update && \
 
 
 # 모델 파일 다운로드
-RUN mkdir -p Wav2Lip/checkpoints && \
-    gdown https://drive.google.com/file/d/1ZQwe70j4l6qZ4ea4ERFFLxTZoyK-21hb -O app/Wav2Lip/checkpoints/wav2lip_gan.pth && \
-    mkdir -p Wav2Lip/face_detection/detection/sfd && \
-    gdown https://drive.google.com/file/d/1bTfcdIBbQT1ipbbZ-mzarP_Mq0MSuOP5 -O app/Wav2Lip/face_detection/detection/sfd/s3fd.pth
+RUN mkdir -p /app/Wav2Lip/checkpoints && \
+    gdown https://drive.google.com/uc?export=download&id=1ZQwe70j4l6qZ4ea4ERFFLxTZoyK-21hb -O /app/Wav2Lip/checkpoints/wav2lip_gan.pth && \
+    mkdir -p /app/Wav2Lip/face_detection/detection/sfd && \
+    gdown https://drive.google.com/uc?export=download&id=1bTfcdIBbQT1ipbbZ-mzarP_Mq0MSuOP5 -O /app/Wav2Lip/face_detection/detection/sfd/s3fd.pth
+
 
 # 실행 명령어
 EXPOSE 8000
