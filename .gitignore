@@ -1,0 +1,6 @@
+# Python virtual environment
+venv
+
+# Wav2Lip large files
+Wav2Lip/checkpoints/
+Wav2Lip/face_detection/detection/sfd/s3fd.pth
