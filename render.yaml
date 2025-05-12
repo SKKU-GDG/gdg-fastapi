@@ -8,3 +8,6 @@ services:
     repo: https://github.com/SKKU-GDG/gdg-fastapi
     dockerfilePath: ./Dockerfile
     autoDeploy: true
+    envVars:
+      - key: PORT
+        value: "8000"
