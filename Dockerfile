@@ -1,11 +1,12 @@
 # Base image
 FROM python:3.12-slim
 
-# 시스템 패키지 설치
+# 필수 패키지 설치 (gdown 포함)
 RUN apt-get update && \
     apt-get install -y ffmpeg git libgl1-mesa-glx && \
+    pip install --no-cache-dir gdown && \
     rm -rf /var/lib/apt/lists/*
-
+    
 # 작업 디렉토리 생성
 WORKDIR /app
 
