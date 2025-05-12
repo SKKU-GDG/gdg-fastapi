@@ -9,7 +9,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # 코드 복사
-COPY . .
+COPY app/ .
 
 # 필수 패키지 설치 (gdown 포함)
 RUN apt-get update && \
