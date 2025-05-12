@@ -4,7 +4,7 @@ from typing import Optional
 import os
 import shutil
 import uuid
-from app import video
+import video
 
 app = FastAPI()
 
