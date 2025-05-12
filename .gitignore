@@ -1,6 +1,9 @@
 # Python virtual environment
 venv/
-__pycache__/
+app/__pycache__/
+app/Wav2Lip/__pycache__/
+app/Wav2Lip/temp/
+
 
 # Wav2Lip large files
 app/Wav2Lip/checkpoints/wav2lip_gan.pth
