@@ -20,10 +20,10 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # 모델 파일 다운로드
-RUN mkdir -p Wav2Lip/checkpoints && \
-    gdown https://drive.google.com/uc?export=download&id=1ZQwe70j4l6qZ4ea4ERFFLxTZoyK-21hb -O Wav2Lip/checkpoints/wav2lip_gan.pth && \
-    mkdir -p Wav2Lip/face_detection/detection/sfd && \
-    gdown https://drive.google.com/uc?export=download&id=1bTfcdIBbQT1ipbbZ-mzarP_Mq0MSuOP5 -O Wav2Lip/face_detection/detection/sfd/s3fd.pth
+# RUN mkdir -p Wav2Lip/checkpoints && \
+#     gdown https://drive.google.com/uc?export=download&id=1ZQwe70j4l6qZ4ea4ERFFLxTZoyK-21hb -O Wav2Lip/checkpoints/wav2lip_gan.pth && \
+#     mkdir -p Wav2Lip/face_detection/detection/sfd && \
+#     gdown https://drive.google.com/uc?export=download&id=1bTfcdIBbQT1ipbbZ-mzarP_Mq0MSuOP5 -O Wav2Lip/face_detection/detection/sfd/s3fd.pth
 
 # 포트 및 실행
 EXPOSE 8000
