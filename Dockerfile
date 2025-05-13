@@ -27,4 +27,5 @@ RUN apt-get update && \
 
 # 포트 및 실행
 EXPOSE 8000
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "-c", "ls -al && uvicorn main:app --host 0.0.0.0 --port 8000"]
+#CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
